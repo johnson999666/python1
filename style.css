@@ -1,0 +1,58 @@
+.slideshow {
+    margin-right: 10px;
+    margin-left: 10px;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slide {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slide img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slide {
+    /* Add this line to center the slides vertically */
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Add this line to hide any overflow from the slides */
+    position: relative; /* Add this line to set the position of the slides */
+  }
+  
+  .slide:not(:first-of-type) {
+    position: absolute; /* Add this line to position the second and subsequent slides */
+    left: 100%; /* Add this line to move the slides offscreen to the right */
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .slide img {
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Add this line to center the slides horizontally */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
